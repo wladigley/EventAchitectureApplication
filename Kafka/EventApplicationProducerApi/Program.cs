@@ -6,7 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container. --------------------------------------
 var producerConfiguration = new ProducerConfig();
-builder.Configuration.Bind("producerconfiguration", producerConfiguration);
+producerConfiguration.BootstrapServers = "localhost:9092";
+// ou
+//builder.Configuration.Bind("producerconfiguration", producerConfiguration);
+
 builder.Services.AddSingleton<ProducerConfig>(producerConfiguration);
 
 //---------------------------------------------------------
