@@ -1,6 +1,15 @@
+using Confluent.Kafka;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Add services to the container. --------------------------------------
+var producerConfiguration = new ProducerConfig();
+builder.Configuration.Bind("producerconfiguration", producerConfiguration);
+builder.Services.AddSingleton<ProducerConfig>(producerConfiguration);
+
+//---------------------------------------------------------
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
