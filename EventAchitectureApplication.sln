@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kafka", "Kafka", "{EC766EBC-0246-4E76-81F7-C370BC74A0A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rabbit", "Rabbit", "{75A2E921-53E8-413B-A277-33A66A8D9F5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventApplicationProducerApi", "Kafka\EventApplicationProducerApi\EventApplicationProducerApi.csproj", "{886BF65A-2845-4D31-B669-917E6C40E613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventApplicationConsumerApi", "Kafka\EventApplicationConsumerApi\EventApplicationConsumerApi.csproj", "{A4690F7F-21B7-4F52-92F4-FA62E519B854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventApplicationConsumerApi", "Rabbit\EventApplicationConsumerApi\EventApplicationConsumerApi.csproj", "{EF5AD3E2-6C9B-4FE6-9176-0B24C935C1AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventApplicationProducerApi", "Rabbit\EventApplicationProducerApi\EventApplicationProducerApi.csproj", "{23883F7F-7280-4B38-B504-211664F26A2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{886BF65A-2845-4D31-B669-917E6C40E613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886BF65A-2845-4D31-B669-917E6C40E613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886BF65A-2845-4D31-B669-917E6C40E613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886BF65A-2845-4D31-B669-917E6C40E613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4690F7F-21B7-4F52-92F4-FA62E519B854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4690F7F-21B7-4F52-92F4-FA62E519B854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4690F7F-21B7-4F52-92F4-FA62E519B854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4690F7F-21B7-4F52-92F4-FA62E519B854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF5AD3E2-6C9B-4FE6-9176-0B24C935C1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF5AD3E2-6C9B-4FE6-9176-0B24C935C1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF5AD3E2-6C9B-4FE6-9176-0B24C935C1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF5AD3E2-6C9B-4FE6-9176-0B24C935C1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23883F7F-7280-4B38-B504-211664F26A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23883F7F-7280-4B38-B504-211664F26A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23883F7F-7280-4B38-B504-211664F26A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23883F7F-7280-4B38-B504-211664F26A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{886BF65A-2845-4D31-B669-917E6C40E613} = {EC766EBC-0246-4E76-81F7-C370BC74A0A3}
+		{A4690F7F-21B7-4F52-92F4-FA62E519B854} = {EC766EBC-0246-4E76-81F7-C370BC74A0A3}
+		{EF5AD3E2-6C9B-4FE6-9176-0B24C935C1AB} = {75A2E921-53E8-413B-A277-33A66A8D9F5C}
+		{23883F7F-7280-4B38-B504-211664F26A2C} = {75A2E921-53E8-413B-A277-33A66A8D9F5C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3C77C92-5234-460F-B15F-12C70D8BEEF0}
+	EndGlobalSection
+EndGlobal
